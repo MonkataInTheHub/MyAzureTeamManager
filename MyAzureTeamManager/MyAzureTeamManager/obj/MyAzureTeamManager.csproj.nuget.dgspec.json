@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj": {}
+  },
+  "projects": {
+    "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj",
+        "projectName": "MyAzureTeamManager",
+        "projectPath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj",
+        "packagesPath": "C:\\Users\\Moni\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Moni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Models\\MyAzureTeamManager.Models\\bin\\Debug": {},
+          "D:\\Documents\\Visual Studio Repository\\Olympians.Models\\Olympians.Models\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "MyAzureTeamManager.Models": {
+              "target": "Package",
+              "version": "[1.0.12, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
