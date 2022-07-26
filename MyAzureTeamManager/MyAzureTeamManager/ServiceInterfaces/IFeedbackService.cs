@@ -8,6 +8,6 @@ namespace MyAzureTeamManager.Services
         Task<bool> DeleteAsync(int feedbackId);
         Task<List<Feedback>> GetAllFeedbacksAsync();
         Task<Feedback> GetAsync(int feedbackId);
-        System.Threading.Tasks.Task UpdateAsync(Feedback FeedbackProvided);
+        System.Threading.Tasks.Task UpdateAsync(int id, Feedback FeedbackProvided);
     }
 }

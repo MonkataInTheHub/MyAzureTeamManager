@@ -34,9 +34,9 @@ namespace MyAzureTeamManager.Controllers
         }
 
         [HttpPut]
-        public async System.Threading.Tasks.Task Update([FromBody] Feedback feedback)
+        public async System.Threading.Tasks.Task Update(int id, [FromBody] Feedback feedback)
         {
-            await _feedbackService.UpdateAsync(feedback);
+            await _feedbackService.UpdateAsync(id, feedback);
         }
 
         [HttpDelete]

@@ -8,6 +8,6 @@ namespace MyAzureTeamManager.Services
         Task<bool> DeleteAsync(int bugId);
         Task<List<Bug>> GetAllBugsAsync();
         Task<Bug> GetAsync(int bugId);
-        System.Threading.Tasks.Task UpdateAsync(Bug BugProvided);
+        System.Threading.Tasks.Task UpdateAsync(int id, Bug BugProvided);
     }
 }

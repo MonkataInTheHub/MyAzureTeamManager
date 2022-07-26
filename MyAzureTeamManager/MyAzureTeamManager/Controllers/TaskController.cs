@@ -33,9 +33,9 @@ namespace MyAzureTeamManager.Controllers
         }
 
         [HttpPut]
-        public async System.Threading.Tasks.Task Update([FromBody] Models.Task task)
+        public async System.Threading.Tasks.Task Update(int id, [FromBody] Models.Task task)
         {
-            await _taskService.UpdateAsync(task);
+            await _taskService.UpdateAsync(id, task);
         }
 
         [HttpDelete]

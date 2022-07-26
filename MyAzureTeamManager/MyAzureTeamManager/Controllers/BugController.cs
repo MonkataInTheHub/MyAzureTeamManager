@@ -34,9 +34,9 @@ namespace MyAzureTeamManager.Controllers
         }
 
         [HttpPut]
-        public async System.Threading.Tasks.Task Update([FromBody] Bug bug)
+        public async System.Threading.Tasks.Task Update(int id, [FromBody] Bug bug)
         {
-            await _bugService.UpdateAsync(bug);
+            await _bugService.UpdateAsync(id, bug);
         }
 
         [HttpDelete]

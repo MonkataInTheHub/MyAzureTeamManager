@@ -33,16 +33,15 @@ namespace MyAzureTeamManager.Services
             _dbContext.Boards.Add(board);
             _dbContext.SaveChanges();
         }
-        public async System.Threading.Tasks.Task UpdateAsync(Board boardProvided)
+        public async System.Threading.Tasks.Task UpdateAsync(int id, Board boardProvided)
         {
             var Board = await _dbContext.Boards
-                .FirstOrDefaultAsync(x => x.BoardId == boardProvided.BoardId);
+                .FirstOrDefaultAsync(x => x.BoardId == id);
             if (Board is null)
             {
                 throw new Exception("Board does not exist!");
             }
 
-            Board.BoardId = boardProvided.BoardId;
             Board.Bugs = boardProvided.Bugs;
             Board.Tasks = boardProvided.Tasks;
             Board.Feedbacks = boardProvided.Feedbacks;

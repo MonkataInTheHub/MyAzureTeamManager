@@ -25,6 +25,7 @@ namespace MyAzureTeamManager
             modelBuilder.Entity<Feedback>().Ignore(f => f.Comments);
             modelBuilder.Entity<Bug>().Ignore(b => b.Comments);
 
+
         }
     }
 }

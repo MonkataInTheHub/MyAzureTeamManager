@@ -27,19 +27,16 @@ namespace MyAzureTeamManager.Services
             _dbContext.SaveChanges();
 
         }
-        public async System.Threading.Tasks.Task UpdateAsync(Team teamProvided)
+        public async System.Threading.Tasks.Task UpdateAsync(int id, Team teamProvided)
         {
-            var Team = await _dbContext.Teams
-                .FirstOrDefaultAsync(x => x.TeamId == teamProvided.TeamId);
-            if (Team is null)
+            var team = await _dbContext.Teams
+               .FirstOrDefaultAsync(x => x.TeamId == id);
+            if (team is null)
             {
-                throw new Exception("Team does not exist!");
+                throw new Exception("Person does not exist!");
             }
 
-            Team.TeamId = teamProvided.TeamId;
-            Team.TeamName = teamProvided.TeamName;
-            Team.Members = teamProvided.Members;
-            Team.Boards = teamProvided.Boards;
+            team.TeamName = teamProvided.TeamName;
             _dbContext.SaveChanges();
 
         }

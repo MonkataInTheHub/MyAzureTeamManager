@@ -8,6 +8,6 @@ namespace MyAzureTeamManager.Services
         Task<bool> DeleteAsync(int teamId);
         Task<List<Team>> GetAllTeamsAsync();
         Task<Team> GetAsync(int teamId);
-        System.Threading.Tasks.Task UpdateAsync(Team teamProvided);
+        System.Threading.Tasks.Task UpdateAsync(int id, Team teamProvided);
     }
 }

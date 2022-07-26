@@ -9,6 +9,6 @@ namespace MyAzureTeamManager.Services
         Task<bool> DeleteAsync(int boardId);
         Task<Board> GetAsync(int boardId);
         Task<List<Board>> GetAllBoardsAsync();
-        System.Threading.Tasks.Task UpdateAsync(Board BoardProvided);
+        System.Threading.Tasks.Task UpdateAsync(int id, Board BoardProvided);
     }
 }

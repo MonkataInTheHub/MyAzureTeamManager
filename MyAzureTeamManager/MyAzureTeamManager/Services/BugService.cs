@@ -26,24 +26,23 @@ namespace MyAzureTeamManager.Services
             _dbContext.Bugs.Add(bug);
             _dbContext.SaveChanges();
         }
-        public async System.Threading.Tasks.Task UpdateAsync(Bug bugProvided)
+        public async System.Threading.Tasks.Task UpdateAsync(int id, Bug bugProvided)
         {
-            var Bug = await _dbContext.Bugs
-                .FirstOrDefaultAsync(x => x.BugId == bugProvided.BugId);
-            if (Bug is null)
+            var bug = await _dbContext.Bugs
+                .FirstOrDefaultAsync(x => x.BugId == id);
+            if (bug is null)
             {
                 throw new Exception("Bug does not exist!");
             }
 
-            Bug.BugId = bugProvided.BugId;
-            Bug.Title = bugProvided.Title;
-            Bug.Description = bugProvided.Description;
-            Bug.Comments = bugProvided.Comments;
-            Bug.History = bugProvided.History;
-            Bug.BoardId = bugProvided.BoardId;
-            Bug.Priority = bugProvided.Priority;
-            Bug.Severity = bugProvided.Severity;
-            Bug.BugStatus = bugProvided.BugStatus;
+            bug.Title = bugProvided.Title;
+            bug.Description = bugProvided.Description;
+            bug.Comments = bugProvided.Comments;
+            bug.History = bugProvided.History;
+            bug.BoardId = bugProvided.BoardId;
+            bug.Priority = bugProvided.Priority;
+            bug.Severity = bugProvided.Severity;
+            bug.BugStatus = bugProvided.BugStatus;
             _dbContext.SaveChanges();
         }
         public async Task<bool> DeleteAsync(int bugId)

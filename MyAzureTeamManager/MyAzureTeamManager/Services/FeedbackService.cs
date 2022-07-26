@@ -26,16 +26,15 @@ namespace MyAzureTeamManager.Services
             _dbContext.Feedbacks.Add(feedback);
             _dbContext.SaveChanges();
         }
-        public async System.Threading.Tasks.Task UpdateAsync(Feedback feedbackProvided)
+        public async System.Threading.Tasks.Task UpdateAsync(int id, Feedback feedbackProvided)
         {
             var Feedback = await _dbContext.Feedbacks
-                .FirstOrDefaultAsync(x => x.FeedbackId == feedbackProvided.FeedbackId);
+                .FirstOrDefaultAsync(x => x.FeedbackId == id);
             if (Feedback is null)
             {
                 throw new Exception("Feedback does not exist!");
             }
 
-            Feedback.FeedbackId = feedbackProvided.FeedbackId;
             Feedback.Title = feedbackProvided.Title;
             Feedback.Description = feedbackProvided.Description;
             Feedback.Comments = feedbackProvided.Comments;

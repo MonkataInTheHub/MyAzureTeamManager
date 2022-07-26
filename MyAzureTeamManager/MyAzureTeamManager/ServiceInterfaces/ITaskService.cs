@@ -7,6 +7,6 @@ namespace MyAzureTeamManager.Services
         Task<bool> DeleteAsync(int taskId);
         Task<List<Models.Task>> GetAllTasksAsync();
         Task<Models.Task> GetAsync(int taskId);
-        Task UpdateAsync(Models.Task taskProvided);
+        Task UpdateAsync(int id, Models.Task taskProvided);
     }
 }

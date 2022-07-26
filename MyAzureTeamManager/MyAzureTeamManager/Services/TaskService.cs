@@ -25,16 +25,15 @@ namespace MyAzureTeamManager.Services
             _dbContext.Tasks.Add(task);
             _dbContext.SaveChanges();
         }
-        public async System.Threading.Tasks.Task UpdateAsync(Models.Task taskProvided)
+        public async System.Threading.Tasks.Task UpdateAsync(int id, Models.Task taskProvided)
         {
             var Task = await _dbContext.Tasks
-                .FirstOrDefaultAsync(x => x.TaskId == taskProvided.TaskId);
+                .FirstOrDefaultAsync(x => x.TaskId == id);
             if (Task is null)
             {
                 throw new Exception("Task does not exist!");
             }
 
-            Task.TaskId = taskProvided.TaskId;
             Task.Title = taskProvided.Title;
             Task.Description = taskProvided.Description;
             Task.Comments = taskProvided.Comments;
