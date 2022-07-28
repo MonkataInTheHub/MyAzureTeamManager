@@ -44,5 +44,6 @@ namespace MyAzureTeamManager.Controllers
         {
             _personService.DeleteAsync(personId);
         }
+
     }
 }

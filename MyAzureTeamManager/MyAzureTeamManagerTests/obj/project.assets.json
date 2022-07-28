@@ -707,7 +707,7 @@
           }
         }
       },
-      "MyAzureTeamManager.Models/1.0.12": {
+      "MyAzureTeamManager.Models/1.0.14": {
         "type": "package",
         "compile": {
           "lib/net6.0/MyAzureTeamManager.Models.dll": {}
@@ -2293,7 +2293,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.7",
           "Microsoft.EntityFrameworkCore.InMemory": "6.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
-          "MyAzureTeamManager.Models": "1.0.12",
+          "MyAzureTeamManager.Models": "1.0.14",
           "Swashbuckle.AspNetCore": "6.2.3",
           "System.Configuration.ConfigurationManager": "6.0.0"
         },
@@ -3716,14 +3716,14 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MyAzureTeamManager.Models/1.0.12": {
-      "sha512": "z0aTsQ4Ksc+6mNGMAhJVcqUbvfbLQHmXsgCVHxw1pYta90ANdmdWX2OzEIn2NYA1FHVvB7sGhiHgmvZncmZ/4w==",
+    "MyAzureTeamManager.Models/1.0.14": {
+      "sha512": "ZCJBvcABP+nbb7KOimo3TQmMIE/Z8oTeH8SKLOnWHcWPv9xqp5305IEIPKZwEv4XXazOg9QMiekx8EkAIYVUEw==",
       "type": "package",
-      "path": "myazureteammanager.models/1.0.12",
+      "path": "myazureteammanager.models/1.0.14",
       "files": [
         ".nupkg.metadata",
         "lib/net6.0/MyAzureTeamManager.Models.dll",
-        "myazureteammanager.models.1.0.12.nupkg.sha512",
+        "myazureteammanager.models.1.0.14.nupkg.sha512",
         "myazureteammanager.models.nuspec"
       ]
     },

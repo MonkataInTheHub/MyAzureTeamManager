@@ -9,5 +9,7 @@ namespace MyAzureTeamManager.Services
         Task<List<Team>> GetAllTeamsAsync();
         Task<Team> GetAsync(int teamId);
         System.Threading.Tasks.Task UpdateAsync(int id, Team teamProvided);
+        System.Threading.Tasks.Task AssignPersonToTeamAsync(int personId);
+        System.Threading.Tasks.Task AssignBoardToTeamAsync(int boardId);
     }
 }

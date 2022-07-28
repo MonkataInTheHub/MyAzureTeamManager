@@ -33,16 +33,26 @@ namespace MyAzureTeamManager.Controllers
             _teamService.Create(team);
         }
 
-        [HttpPut]
+        [HttpPut("Update")]
         public async System.Threading.Tasks.Task Update(int id, [FromBody] Team team)
         {
             await _teamService.UpdateAsync(id, team);
         }
 
         [HttpDelete]
-        public void Delete([FromBody] int teamId)
+        public async System.Threading.Tasks.Task Delete([FromBody] int teamId)
         {
-            _teamService.DeleteAsync(teamId);
+            await _teamService.DeleteAsync(teamId);
+        }
+        [HttpPut("AssignPerson")]
+        public async System.Threading.Tasks.Task AssignPersonToTeam(int personId)
+        {
+            await _teamService.AssignPersonToTeamAsync(personId);
+        }
+        [HttpPut("AssignBoard")]
+        public async System.Threading.Tasks.Task AssignBoardToTeam(int boardId)
+        {
+            await _teamService.AssignBoardToTeamAsync(boardId);
         }
     }
 }

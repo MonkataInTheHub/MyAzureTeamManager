@@ -19,13 +19,9 @@ namespace MyAzureTeamManager
         public DbSet<Feedback> Feedbacks { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Team>().Ignore(t => t.Boards);
-            modelBuilder.Entity<Team>().Ignore(t => t.Members);
             modelBuilder.Entity<Models.Task>().Ignore(t => t.Comments);
             modelBuilder.Entity<Feedback>().Ignore(f => f.Comments);
             modelBuilder.Entity<Bug>().Ignore(b => b.Comments);
-
-
         }
     }
 }

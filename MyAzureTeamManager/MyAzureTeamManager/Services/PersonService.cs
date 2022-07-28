@@ -41,7 +41,6 @@ namespace MyAzureTeamManager.Services
             _dbContext.SaveChanges();
 
         }
-
         public async Task<bool> DeleteAsync(int personId)
         {
             var person = await _dbContext.People

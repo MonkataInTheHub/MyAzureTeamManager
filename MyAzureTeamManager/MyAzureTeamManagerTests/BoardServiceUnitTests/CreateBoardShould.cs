@@ -16,9 +16,8 @@ namespace MyAzureTeamManagerTests.Tests.BoardServiceUnitTests
             //Arrange
             var dbContext = new MyAzureTeamManagerDbContext(Utils.GetOptions("CreateBoardDb"));
             var sut = new BoardService(dbContext);
-            var board = new Board
-            {
-            };
+            var board = new Board(1);
+            
 
             //Act
             sut.Create(board);

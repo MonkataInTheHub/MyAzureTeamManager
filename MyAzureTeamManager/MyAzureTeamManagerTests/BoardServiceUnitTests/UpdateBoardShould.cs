@@ -20,9 +20,7 @@ namespace MyAzureTeamManager.Tests.BoardServiceUnitTests
             Utils.Seed(dbContext);
             var sut = new BoardService(dbContext);
             var id = 1;
-            var board = new Board
-            {
-            };
+            var board = new Board(1);
 
             //Act
             await sut.UpdateAsync(id, board);

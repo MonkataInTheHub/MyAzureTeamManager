@@ -90,10 +90,8 @@ namespace MyAzureTeamManager.Tests
             };
             var boards = new Board[]
             {
-                new Board
-                {
-
-                }
+                new Board(1)
+                
             };
             var feedbacks = new Feedback[]
             {
