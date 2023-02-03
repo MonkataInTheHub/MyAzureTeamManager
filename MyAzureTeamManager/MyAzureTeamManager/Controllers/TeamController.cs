@@ -26,6 +26,11 @@ namespace MyAzureTeamManager.Controllers
         {
             return await _teamService.GetAsync(teamId);
         }
+        [HttpGet("GetTeamActivity")]
+        public async Task<List<Board>> GetTeamActivity(int teamId)
+        {
+            return await _teamService.GetTeamActivityAsync(teamId);
+        }
 
         [HttpPost]
         public void Create([FromBody] Team team)

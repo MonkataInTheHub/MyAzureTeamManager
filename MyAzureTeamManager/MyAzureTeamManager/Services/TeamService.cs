@@ -28,31 +28,52 @@ namespace MyAzureTeamManager.Services
                     team.Members.Add(member);
                 }
             }
-            return await _dbContext.Teams.ToListAsync();
+            return teams;
         }
         public async Task<Team> GetAsync(int teamId)
         {
-            var team = await _dbContext.Teams
+            var team = await _dbContext.Teams.Include(x=> x.Members)
                 .FirstOrDefaultAsync(x => x.TeamId == teamId);
-            var members = await _dbContext.People.Where(x => x.TeamId == teamId).ToListAsync();
+
+            //var members = await _dbContext.People.Where(x => x.TeamId == teamId).ToListAsync();
             var boards = await _dbContext.Boards.Where(x => x.TeamId == teamId).ToListAsync();
-            if (members is null)
+            if (team is null)
             {
                 throw new Exception("Team does not exist!");
-            }
-            if (boards is null)
-            {
-                throw new Exception("Person does not exist!");
             }
             foreach (var board in boards)
             {
                 team.Boards.Add(board);
             }
-            foreach (var member in members)
-            {
-                team.Members.Add(member);
-            }
+            //foreach (var member in members)
+            //{
+            //    team.Members.Add(member);
+            //}
             return team;
+        }
+        public async Task<List<Board>> GetTeamActivityAsync(int teamId)
+        {
+            var boards = await _dbContext.Boards.ToListAsync();
+
+            foreach (var board in boards)
+            {
+                var bugs = await _dbContext.Bugs.Where(x => x.BoardId == board.BoardId).ToListAsync();
+                var tasks = await _dbContext.Tasks.Where(x => x.BoardId == board.BoardId).ToListAsync();
+                var feedbacks = await _dbContext.Feedbacks.Where(x => x.BoardId == board.BoardId).ToListAsync();
+                foreach (var bug in bugs)
+                {
+                    board.Bugs.Add(bug);
+                }
+                foreach (var task in tasks)
+                {
+                    board.Tasks.Add(task);
+                }
+                foreach (var feedback in feedbacks)
+                {
+                    board.Feedbacks.Add(feedback);
+                }
+            }
+            return boards.Where(x=> x.TeamId == teamId).ToList();
         }
         public void Create(Team team)
         {

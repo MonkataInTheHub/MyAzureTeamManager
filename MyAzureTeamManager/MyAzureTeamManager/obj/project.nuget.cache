@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mYsv9MDwKjjqhX9gH8RDdEps1/6Pwtm14T4po290ugYHqtXavnfQo1aU+om19CpFbdemUK8T+BOHD3Wy7C+msw==",
+  "dgSpecHash": "d0jjBkUIjK2g0JLo3sU+a1mpqLBNVU2MIgtofa1675OUYD0bruc7Muvr8njQyUelYiCAwyHynjuiLKYBVptrQg==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj",
+  "projectFilePath": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Moni\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -36,7 +36,7 @@
     "C:\\Users\\Moni\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\Moni\\.nuget\\packages\\myazureteammanager.models\\1.0.14\\myazureteammanager.models.1.0.14.nupkg.sha512",
+    "C:\\Users\\Moni\\.nuget\\packages\\myazureteammanager.models\\1.1.1\\myazureteammanager.models.1.1.1.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

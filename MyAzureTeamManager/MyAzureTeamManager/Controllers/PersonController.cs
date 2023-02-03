@@ -26,7 +26,11 @@ namespace MyAzureTeamManager.Controllers
         {
             return await _personService.GetAsync(personId);
         }
-
+        [HttpGet("GetPersonActivity")]
+        public async Task<List<IWorkItem>> GetPersonActivity(int personId)
+        {
+            return await _personService.GetPersonActivityAsync(personId);
+        }
         [HttpPost]
         public void Create([FromBody] Person person)
         {

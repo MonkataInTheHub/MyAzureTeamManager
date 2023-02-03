@@ -20,12 +20,52 @@ namespace MyAzureTeamManager.Services
         }
         public async Task<List<Board>> GetAllBoardsAsync()
         {
-            return await _dbContext.Boards.ToListAsync();
+            var boards = await _dbContext.Boards.ToListAsync();
+
+            foreach (var board in boards)
+            {
+                var bugs = await _dbContext.Bugs.Where(x => x.BoardId == board.BoardId).ToListAsync();
+                var tasks = await _dbContext.Tasks.Where(x => x.BoardId == board.BoardId).ToListAsync();
+                var feedbacks = await _dbContext.Feedbacks.Where(x => x.BoardId == board.BoardId).ToListAsync();
+                foreach (var bug in bugs)
+                {
+                    board.Bugs.Add(bug);
+                }
+                foreach (var task in tasks)
+                {
+                    board.Tasks.Add(task);
+                }
+                foreach (var feedback in feedbacks)
+                {
+                    board.Feedbacks.Add(feedback);
+                }
+            }
+            return boards;
         }
         public async Task<Board> GetAsync(int boardId)
         {
-            return await _dbContext.Boards
+            var board = await _dbContext.Boards
                 .FirstOrDefaultAsync(x => x.BoardId == boardId);
+            var bugs = await _dbContext.Bugs.Where(x => x.BoardId == boardId).ToListAsync();
+            var tasks = await _dbContext.Tasks.Where(x => x.BoardId == boardId).ToListAsync();
+            var feedbacks = await _dbContext.Feedbacks.Where(x => x.BoardId == boardId).ToListAsync();
+            if (board is null)
+            {
+                throw new Exception("Board does not exist!");
+            }
+            foreach (var bug in bugs)
+            {
+                board.Bugs.Add(bug);
+            }
+            foreach (var task in tasks)
+            {
+                board.Tasks.Add(task);
+            }
+            foreach (var feedback in feedbacks)
+            {
+                board.Feedbacks.Add(feedback);
+            }
+            return board;
         }
 
         public void Create(Board board)

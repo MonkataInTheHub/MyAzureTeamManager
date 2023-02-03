@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyAzureTeamManager.Models;
+using MyAzureTeamManager.Models.Interfaces;
 
 namespace MyAzureTeamManager.Services
 {
@@ -19,6 +20,30 @@ namespace MyAzureTeamManager.Services
         {
             return await _dbContext.People
                 .FirstOrDefaultAsync(x => x.PersonId == personId);
+        }
+        public async Task<List<IWorkItem>> GetPersonActivityAsync(int personId)
+        {
+            var person = await _dbContext.People
+                .FirstOrDefaultAsync(x => x.PersonId == personId);
+            var team = await _dbContext.Teams.FirstOrDefaultAsync(x => x.TeamId == person.TeamId);
+            var boards = await _dbContext.Boards.Where(x => x.TeamId == team.TeamId).ToListAsync();
+            var workItems = new List<IWorkItem>();
+            foreach (var board in boards)
+            {
+                foreach (var bug in _dbContext.Bugs.Where(x=> x.BoardId == board.BoardId))
+                {
+                    workItems.Add(bug);
+                }
+                foreach (var task in _dbContext.Tasks.Where(x => x.BoardId == board.BoardId))
+                {
+                    workItems.Add(task);
+                }
+                foreach (var feedback in _dbContext.Feedbacks.Where(x => x.BoardId == board.BoardId))
+                {
+                    workItems.Add(feedback);
+                }
+            }
+            return workItems;
         }
         public void Create(Person Person)
         {

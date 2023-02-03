@@ -707,7 +707,7 @@
           }
         }
       },
-      "MyAzureTeamManager.Models/1.0.14": {
+      "MyAzureTeamManager.Models/1.1.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/MyAzureTeamManager.Models.dll": {}
@@ -2293,7 +2293,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.7",
           "Microsoft.EntityFrameworkCore.InMemory": "6.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
-          "MyAzureTeamManager.Models": "1.0.14",
+          "MyAzureTeamManager.Models": "1.1.1",
           "Swashbuckle.AspNetCore": "6.2.3",
           "System.Configuration.ConfigurationManager": "6.0.0"
         },
@@ -3716,14 +3716,14 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MyAzureTeamManager.Models/1.0.14": {
-      "sha512": "ZCJBvcABP+nbb7KOimo3TQmMIE/Z8oTeH8SKLOnWHcWPv9xqp5305IEIPKZwEv4XXazOg9QMiekx8EkAIYVUEw==",
+    "MyAzureTeamManager.Models/1.1.1": {
+      "sha512": "d/CZaMVg5cLVcse+QFg90smcP+Tl33ojlJWLJdQv99KhQpyzt30dOGrBBCw8fRhP0yYlljWNPfrZzDE0V1kjNg==",
       "type": "package",
-      "path": "myazureteammanager.models/1.0.14",
+      "path": "myazureteammanager.models/1.1.1",
       "files": [
         ".nupkg.metadata",
         "lib/net6.0/MyAzureTeamManager.Models.dll",
-        "myazureteammanager.models.1.0.14.nupkg.sha512",
+        "myazureteammanager.models.1.1.1.nupkg.sha512",
         "myazureteammanager.models.nuspec"
       ]
     },
@@ -7777,6 +7777,7 @@
     "net6.0": [
       "Microsoft.NET.Test.Sdk >= 16.11.0",
       "MyAzureTeamManager >= 1.0.0",
+      "MyAzureTeamManager.Models >= 1.1.*",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -7789,11 +7790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj",
+      "projectUniqueName": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj",
       "projectName": "MyAzureTeamManager.Tests",
-      "projectPath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj",
+      "projectPath": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj",
       "packagesPath": "C:\\Users\\Moni\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\obj\\",
+      "outputPath": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7807,16 +7808,16 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Models\\MyAzureTeamManager.Models\\bin\\Debug": {},
-        "D:\\Documents\\Visual Studio Repository\\Olympians.Models\\Olympians.Models\\bin\\Debug": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj": {
-              "projectPath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj"
+            "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj": {
+              "projectPath": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj"
             }
           }
         }
@@ -7834,6 +7835,10 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.11.0, )"
+          },
+          "MyAzureTeamManager.Models": {
+            "target": "Package",
+            "version": "[1.1.*, )"
           },
           "coverlet.collector": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -7867,7 +7872,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

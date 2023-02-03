@@ -3,6 +3,7 @@ using MyAzureTeamManager.Models;
 using System.Configuration;
 using Microsoft.EntityFrameworkCore;
 using MyAzureTeamManager.Services;
+using MyAzureTeamManager.ServiceInterfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,7 @@ builder.Services.AddScoped<IFeedbackService, FeedbackService>();
 builder.Services.AddScoped<ITaskService, TaskService>();
 builder.Services.AddScoped<ITeamService, TeamService>();
 builder.Services.AddScoped<IPersonService, PersonService>();
+builder.Services.AddScoped<ICommentService, CommentService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

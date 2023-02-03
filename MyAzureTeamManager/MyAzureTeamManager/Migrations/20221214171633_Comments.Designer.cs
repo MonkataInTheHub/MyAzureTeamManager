@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyAzureTeamManager;
 
@@ -11,9 +12,10 @@ using MyAzureTeamManager;
 namespace MyAzureTeamManager.Migrations
 {
     [DbContext(typeof(MyAzureTeamManagerDbContext))]
-    partial class MyAzureTeamManagerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221214171633_Comments")]
+    partial class Comments
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

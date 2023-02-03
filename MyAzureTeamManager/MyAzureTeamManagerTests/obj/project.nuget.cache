@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GZp4cNajvWXat0Yx/Nc/jQz33fAmj8QocDRwATkslu9+vlhXSkRI/r5o5T8Evc697WuR4novvq7OgvTiNP5ATw==",
+  "dgSpecHash": "5n5MbldoQJgkavgn1Jk5jiM1z37QGlM+owXw00zDpetekng0Fa+DuvZStiQT20BJwLVUtncxR27cSs6kaSHKMg==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj",
+  "projectFilePath": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Moni\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
@@ -40,7 +40,7 @@
     "C:\\Users\\Moni\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\Moni\\.nuget\\packages\\myazureteammanager.models\\1.0.14\\myazureteammanager.models.1.0.14.nupkg.sha512",
+    "C:\\Users\\Moni\\.nuget\\packages\\myazureteammanager.models\\1.1.1\\myazureteammanager.models.1.1.1.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
