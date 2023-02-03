@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj": {}
+    "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj": {
+    "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj",
+        "projectUniqueName": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj",
         "projectName": "MyAzureTeamManager.Tests",
-        "projectPath": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj",
+        "projectPath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\MyAzureTeamManager.Tests.csproj",
         "packagesPath": "C:\\Users\\Moni\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\obj\\",
+        "outputPath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManagerTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -27,14 +27,15 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Models\\MyAzureTeamManager.Models\\bin\\Debug": {},
+          "D:\\Documents\\Visual Studio Repository\\Olympians.Models\\Olympians.Models\\bin\\Debug": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj": {
-                "projectPath": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj"
+              "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj": {
+                "projectPath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj"
               }
             }
           }
@@ -51,7 +52,7 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.11.0, )"
+              "version": "[17.4.1, )"
             },
             "MyAzureTeamManager.Models": {
               "target": "Package",
@@ -61,17 +62,17 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.2.0, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[2.4.2, )"
             },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.3, )"
+              "version": "[2.4.5, )"
             }
           },
           "imports": [
@@ -93,14 +94,14 @@
         }
       }
     },
-    "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj": {
+    "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj",
+        "projectUniqueName": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj",
         "projectName": "MyAzureTeamManager",
-        "projectPath": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj",
+        "projectPath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj",
         "packagesPath": "C:\\Users\\Moni\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\obj\\",
+        "outputPath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -116,6 +117,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Models\\MyAzureTeamManager.Models\\bin\\Debug": {},
+          "D:\\Documents\\Visual Studio Repository\\Olympians.Models\\Olympians.Models\\bin\\Debug": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

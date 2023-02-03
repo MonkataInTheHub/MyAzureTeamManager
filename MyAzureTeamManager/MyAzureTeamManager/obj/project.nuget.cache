@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d0jjBkUIjK2g0JLo3sU+a1mpqLBNVU2MIgtofa1675OUYD0bruc7Muvr8njQyUelYiCAwyHynjuiLKYBVptrQg==",
+  "dgSpecHash": "JRVKnkmaM6IrBui7LlKgjaDsjkJcXkDAkfrn30nAxJA7wWl3Dyg323qZgOgbFdEFZ7KPQCqdF0LWaQGhOzbyZg==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Visual Studio Repository\\Simeon\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj",
+  "projectFilePath": "D:\\Documents\\Visual Studio Repository\\MyAzureTeamManager.Db\\MyAzureTeamManager\\MyAzureTeamManager\\MyAzureTeamManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Moni\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Moni\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
